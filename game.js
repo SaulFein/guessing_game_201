@@ -53,5 +53,17 @@ var question4 = parseInt(prompt('How many cities did I live in, in California?')
     console.log('The user guessed too low!. Hint: the number is between 1 and 5.')
   }
 
-alert(userName + ', you got ' + score + ' out of 4 correct!');
-console.log('The user got ' + score + ' out of 4 correct.');
+var question5 = prompt('Did I attend Issaquah High School?');
+
+  if (question5.toLowerCase() === 'yes' || question5.toLowerCase() ==='y') {
+    alert('You are correct! I did attend Issaquah High School!');
+    score = score + 1;
+    console.log('The user is correct! I did attend Issaquah High School!');
+
+  } else {
+    alert('You are incorrect! I did attend Issaquah High School!');
+    console.log('The user is incorrect! I did attend Issaquah High School!');
+  }
+
+alert(userName + ', you got ' + score + ' out of 5 correct!');
+console.log('The user got ' + score + ' out of 5 correct.');

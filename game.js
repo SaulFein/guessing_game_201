@@ -51,7 +51,7 @@ var question4 = parseInt(prompt('How many cities did I live in, in California?')
 
   } else if (question4 > 3) {
     alert('You guessed too high! Hint: the number is between 1 and 5.');
-    console.log('The user guessed to high. Hint: the number is between 1 and 5.');
+    console.log('The user guessed too high. Hint: the number is between 1 and 5.');
 
   } else {
     alert('You guessed too low! Hint: the number is between 1 and 5.')
@@ -84,7 +84,7 @@ var question6 = parseInt(prompt('How many colleges did I attend in California?')
 
   } else if (question6 > 2) {
     alert('You guessed too high! Hint: the number is between 1 and 3.');
-    console.log('The user guessed to high. Hint: the number is between 1 and 3.');
+    console.log('The user guessed too high. Hint: the number is between 1 and 3.');
 
   } else {
     alert('You guessed too low! Hint: the number is between 1 and 3.')

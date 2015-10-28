@@ -40,9 +40,9 @@ var question3 = prompt('Did I live in Maryland?');
 var question4 = parseInt(prompt('How many cities did I live in, in California?'));
 
   if (question4 === 3) {
-    alert('You guessed correct!. I lived in San Rafael, Oakland and San Jose.');
+    alert('You are correct!. I lived in San Rafael, Oakland and San Jose.');
     score = score + 1;
-    console.log('The user guessed correct!. I lived in San Rafael, Oakland and San Jose.');
+    console.log('The user is correct!. I lived in San Rafael, Oakland and San Jose.');
 
   } else if (question4 > 3) {
     alert('You guessed too high! Hint: the number is between 1 and 5.');
@@ -65,5 +65,21 @@ var question5 = prompt('Did I attend Issaquah High School?');
     console.log('The user is incorrect! I did attend Issaquah High School!');
   }
 
-alert(userName + ', you got ' + score + ' out of 5 correct!');
-console.log('The user got ' + score + ' out of 5 correct.');
+var question6 = parseInt(prompt('How many colleges did I attend in California?'));
+
+  if (question6 === 2) {
+    alert('You are correct!. I attended Dominican University of California and Ex\'pression College for Digital Arts.');
+    score = score + 1;
+    console.log('The user is correct!. I attended Dominican University of California and Ex\'pression College for Digital Arts.');
+
+  } else if (question6 > 2) {
+    alert('You guessed too high! Hint: the number is between 1 and 3.');
+    console.log('The user guessed to high. Hint: the number is between 1 and 3.');
+
+  } else {
+    alert('You guessed too low! Hint: the number is between 1 and 3.')
+    console.log('The user guessed too low!. Hint: the number is between 1 and 3.')
+  }
+
+alert(userName + ', you got ' + score + ' out of 6 correct!');
+console.log('The user got ' + score + ' out of 6 correct.');

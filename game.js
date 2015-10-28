@@ -39,8 +39,13 @@ var question3 = prompt('Did I live in Maryland?');
 
 var question4 = parseInt(prompt('How many cities did I live in, in California?'));
 
+  while (isNaN(question4)) {
+    alert('Please use numbers only to answer this question!');
+    question4 = parseInt(prompt('How many cities did I live in, in California?'));
+  }
+
   if (question4 === 3) {
-    alert('You are correct!. I lived in San Rafael, Oakland and San Jose.');
+    alert('You is correct!. I lived in San Rafael, Oakland and San Jose.');
     score = score + 1;
     console.log('The user is correct!. I lived in San Rafael, Oakland and San Jose.');
 
@@ -66,6 +71,11 @@ var question5 = prompt('Did I attend Issaquah High School?');
   }
 
 var question6 = parseInt(prompt('How many colleges did I attend in California?'));
+
+  while (isNaN(question6)) {
+    alert('Please use numbers only to answer this question!');
+    question6 = parseInt(prompt('How many colleges did I attend in California?'));
+  }
 
   if (question6 === 2) {
     alert('You are correct!. I attended Dominican University of California and Ex\'pression College for Digital Arts.');

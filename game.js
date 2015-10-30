@@ -1,6 +1,7 @@
 
 var score = 0;
 var userName = prompt('Welcome to my guessing game! What is your name?');
+
 var res1 = document.getElementById('response1');
 var res2 = document.getElementById('response2');
 var res3 = document.getElementById('response3');
@@ -12,7 +13,7 @@ function ques1() {
 var question1 = prompt('Did I live in California?');
 
   if (question1.toLowerCase() === 'yes' || question1.toLowerCase() ==='y') {
-  res1.innerHTML = 'You are correct! I lived in California for 6 years!';
+    res1.innerHTML = 'You are correct! I lived in California for 6 years!';
     score = score + 1;
     console.log('The user is correct! I lived in California for 6 years!');
 
@@ -22,7 +23,7 @@ var question1 = prompt('Did I live in California?');
   }
 }
 
-function ques2(){
+function ques2() {
 var question2 = prompt('Did I live in Oregon?');
 
   if (question2.toLowerCase() === 'no' || question2.toLowerCase() ==='n') {
@@ -54,7 +55,7 @@ function ques4() {
 var question4 = parseInt(prompt('How many cities did I live in, in California?'));
 
   while (isNaN(question4)) {
-    res4.innerHTML = 'Please use numbers only to answer this question!';
+    alert('Please use numbers only to answer this question!');
     question4 = parseInt(prompt('How many cities did I live in, in California?'));
   }
 
@@ -82,7 +83,7 @@ var question5 = prompt('Did I attend Issaquah High School?');
     console.log('The user is correct! I did attend Issaquah High School!');
 
   } else {
-   res5.innerHTML = 'You are incorrect! I did attend Issaquah High School!';
+    res5.innerHTML = 'You are incorrect! I did attend Issaquah High School!';
     console.log('The user is incorrect! I did attend Issaquah High School!');
   }
 }
@@ -91,21 +92,21 @@ function ques6(){
 var question6 = parseInt(prompt('How many colleges did I attend in California?'));
 
   while (isNaN(question6)) {
-   res6.innerHTML = 'Please use numbers only to answer this question!';
+    alert('Please use numbers only to answer this question!');
     question6 = parseInt(prompt('How many colleges did I attend in California?'));
   }
 
   if (question6 === 2) {
-   res6.innerHTML = 'You are correct!. I attended Dominican University of California and Ex\'pression College for Digital Arts.';
+    res6.innerHTML = 'You are correct!. I attended Dominican University of California and Ex\'pression College for Digital Arts.';
     score = score + 1;
     console.log('The user is correct!. I attended Dominican University of California and Ex\'pression College for Digital Arts.');
 
   } else if (question6 > 2) {
-   res6.innerHTML = 'You guessed too high! Hint: the number is between 1 and 3.';
+    res6.innerHTML = 'You guessed too high! Hint: the number is between 1 and 3.';
     console.log('The user guessed too high. Hint: the number is between 1 and 3.');
 
   } else {
-   res6.innerHTML = 'You guessed too low! Hint: the number is between 1 and 3.';
+    res6.innerHTML = 'You guessed too low! Hint: the number is between 1 and 3.';
     console.log('The user guessed too low!. Hint: the number is between 1 and 3.');
   }
 }

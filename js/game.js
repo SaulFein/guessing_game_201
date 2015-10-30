@@ -13,7 +13,7 @@ function ques1() {
 var question1 = prompt('Did I live in California?');
 
   if (question1.toLowerCase() === 'yes' || question1.toLowerCase() ==='y') {
-    res1.innerHTML = 'You are correct! I lived in California for 6 years!' + '<br><img width = "200px" src="img/ca_flag.png">';
+    res1.innerHTML = 'You are correct! I lived in California for 6 years!' + '<br><img width = "200px" src="Img/ca_flag.png">';
     res1.className = "green";
     score = score + 1;
     console.log('The user is correct! I lived in California for 6 years!');
@@ -29,7 +29,7 @@ function ques2() {
 var question2 = prompt('Did I live in Oregon?');
 
   if (question2.toLowerCase() === 'no' || question2.toLowerCase() ==='n') {
-    res2.innerHTML = 'You are correct! I did not live in Oregon.' + '<br><img width = "200px" src="img/no_or.jpg">';
+    res2.innerHTML = 'You are correct! I did not live in Oregon.' + '<br><img width = "200px" src="Img/no_or.jpg">';
     res2.className = "green";
     score = score + 1;
     console.log('The user is correct! I did not live in Oregon.');
@@ -45,7 +45,7 @@ function ques3() {
 var question3 = prompt('Did I live in Maryland?');
 
   if (question3.toLowerCase() === 'yes' || question3.toLowerCase() ==='y') {
-    res3.innerHTML = 'You are correct! I lived in Maryland for 2 years!'+ '<br><img width = "200px" src="img/md_flag.gif">';
+    res3.innerHTML = 'You are correct! I lived in Maryland for 2 years!'+ '<br><img width = "200px" src="Img/md_flag.gif">';
     res3.className = "green";
     score = score + 1;
     console.log('The user is correct! I lived in Maryland for 2 years!');
@@ -66,7 +66,7 @@ var question4 = parseInt(prompt('How many cities did I live in, in California?')
   }
 
   if (question4 === 3) {
-    res4.innerHTML = 'You is correct!. I lived in San Rafael, Oakland and San Jose.' + '<br><img width = "200px" src="img/number_3.jpeg">';
+    res4.innerHTML = 'You is correct!. I lived in San Rafael, Oakland and San Jose.' + '<br><Img width = "200px" src="img/number_3.jpeg">';
     res4.className = "green";
     score = score + 1;
     console.log('The user is correct!. I lived in San Rafael, Oakland and San Jose.');
@@ -87,7 +87,7 @@ function ques5() {
 var question5 = prompt('Did I attend Issaquah High School?');
 
   if (question5.toLowerCase() === 'yes' || question5.toLowerCase() ==='y') {
-    res5.innerHTML = 'You are correct! I did attend Issaquah High School!' + '<br><img width = "200px" src="img/issaquah.jpg">';
+    res5.innerHTML = 'You are correct! I did attend Issaquah High School!' + '<br><img width = "200px" src="Img/issaquah.jpg">';
     res5.className = "green";
     score = score + 1;
     console.log('The user is correct! I did attend Issaquah High School!');
@@ -108,7 +108,7 @@ var question6 = parseInt(prompt('How many colleges did I attend in California?')
   }
 
   if (question6 === 2) {
-    res6.innerHTML = 'You are correct!. I attended Dominican University of California and Ex\'pression College for Digital Arts.' + '<br><img width = "200px" src="img/number_2.jpeg">';
+    res6.innerHTML = 'You are correct!. I attended Dominican University of California and Ex\'pression College for Digital Arts.' + '<br><img width = "200px" src="Img/number_2.jpeg">';
     res6.className = "green";
     score = score + 1;
     console.log('The user is correct!. I attended Dominican University of California and Ex\'pression College for Digital Arts.');

@@ -1,6 +1,9 @@
+
 var score = 0;
 var userName = prompt('Welcome to my guessing game! What is your name?');
 
+
+function ques1() {
 var question1 = prompt('Did I live in California?');
 
   if (question1.toLowerCase() === 'yes' || question1.toLowerCase() ==='y') {
@@ -12,7 +15,9 @@ var question1 = prompt('Did I live in California?');
     alert('You are incorrect! I lived in California for 6 years!');
     console.log('The user is incorrect! I lived in California for 6 years!');
   }
+}
 
+function ques2(){
 var question2 = prompt('Did I live in Oregon?');
 
   if (question2.toLowerCase() === 'no' || question2.toLowerCase() ==='n') {
@@ -24,7 +29,9 @@ var question2 = prompt('Did I live in Oregon?');
     alert('You are incorrect! I did not live in Oregon!');
     console.log('The user is incorrect! I did not live in Oregon!');
   }
+}
 
+function ques3() {
 var question3 = prompt('Did I live in Maryland?');
 
   if (question3.toLowerCase() === 'yes' || question3.toLowerCase() ==='y') {
@@ -36,7 +43,9 @@ var question3 = prompt('Did I live in Maryland?');
     alert('You are incorrect! I lived in Maryland for 2 years!');
     console.log('The user is incorrect! I lived in Maryland for 2 years!');
   }
+}
 
+function ques4() {
 var question4 = parseInt(prompt('How many cities did I live in, in California?'));
 
   while (isNaN(question4)) {
@@ -57,7 +66,9 @@ var question4 = parseInt(prompt('How many cities did I live in, in California?')
     alert('You guessed too low! Hint: the number is between 1 and 5.')
     console.log('The user guessed too low!. Hint: the number is between 1 and 5.')
   }
+}
 
+function ques5() {
 var question5 = prompt('Did I attend Issaquah High School?');
 
   if (question5.toLowerCase() === 'yes' || question5.toLowerCase() ==='y') {
@@ -69,7 +80,9 @@ var question5 = prompt('Did I attend Issaquah High School?');
     alert('You are incorrect! I did attend Issaquah High School!');
     console.log('The user is incorrect! I did attend Issaquah High School!');
   }
+}
 
+function ques6(){
 var question6 = parseInt(prompt('How many colleges did I attend in California?'));
 
   while (isNaN(question6)) {
@@ -90,6 +103,14 @@ var question6 = parseInt(prompt('How many colleges did I attend in California?')
     alert('You guessed too low! Hint: the number is between 1 and 3.')
     console.log('The user guessed too low!. Hint: the number is between 1 and 3.')
   }
+}
+
+ques1();
+ques2();
+ques3();
+ques4();
+ques5();
+ques6();
 
 alert(userName + ', you got ' + score + ' out of 6 correct!');
 console.log('The user got ' + score + ' out of 6 correct.');

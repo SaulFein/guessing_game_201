@@ -8,8 +8,6 @@ var res4 = document.getElementById('response4');
 var res5 = document.getElementById('response5');
 var res6 = document.getElementById('response6');
 
-
-
 function ques1() {
 var question1 = prompt('Did I live in California?');
 
@@ -19,7 +17,7 @@ var question1 = prompt('Did I live in California?');
     console.log('The user is correct! I lived in California for 6 years!');
 
   } else {
-    res1.innerHTML ='You are incorrect! I lived in California for 6 years!';
+    res1.innerHTML = 'You are incorrect! I lived in California for 6 years!';
     console.log('The user is incorrect! I lived in California for 6 years!');
   }
 }
@@ -42,12 +40,12 @@ function ques3() {
 var question3 = prompt('Did I live in Maryland?');
 
   if (question3.toLowerCase() === 'yes' || question3.toLowerCase() ==='y') {
-    res3.innerHTML ='You are correct! I lived in Maryland for 2 years!';
+    res3.innerHTML = 'You are correct! I lived in Maryland for 2 years!';
     score = score + 1;
     console.log('The user is correct! I lived in Maryland for 2 years!');
 
   } else {
-    res3.innerHTML ='You are incorrect! I lived in Maryland for 2 years!';
+    res3.innerHTML = 'You are incorrect! I lived in Maryland for 2 years!';
     console.log('The user is incorrect! I lived in Maryland for 2 years!');
   }
 }
@@ -56,12 +54,12 @@ function ques4() {
 var question4 = parseInt(prompt('How many cities did I live in, in California?'));
 
   while (isNaN(question4)) {
-    res4.innerHTML ='Please use numbers only to answer this question!';
+    res4.innerHTML = 'Please use numbers only to answer this question!';
     question4 = parseInt(prompt('How many cities did I live in, in California?'));
   }
 
   if (question4 === 3) {
-    res4.innerHTML ='You is correct!. I lived in San Rafael, Oakland and San Jose.';
+    res4.innerHTML = 'You is correct!. I lived in San Rafael, Oakland and San Jose.';
     score = score + 1;
     console.log('The user is correct!. I lived in San Rafael, Oakland and San Jose.');
 

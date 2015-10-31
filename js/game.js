@@ -66,7 +66,7 @@ var question4 = parseInt(prompt('How many cities did I live in, in California?')
   }
 
   if (question4 === 3) {
-    res4.innerHTML = 'You is correct!. I lived in San Rafael, Oakland and San Jose.' + '<br><Img width = "200px" src="img/number_3.jpeg">';
+    res4.innerHTML = 'You is correct!. I lived in San Rafael, Oakland and San Jose.' + '<br><Img width = "200px" src="Img/number_3.jpeg">';
     res4.className = "green";
     score = score + 1;
     console.log('The user is correct!. I lived in San Rafael, Oakland and San Jose.');
